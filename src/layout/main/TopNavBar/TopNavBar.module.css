@@ -4,11 +4,13 @@
 .top__bar {
 	border-bottom: 1px solid #f7f7f7;
 }
-.logo h3 {
+.logo h3 a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0;
+	color: #000;
+	text-decoration: none;
 }
 .logo__img {
 	display: inline-block;
@@ -78,7 +80,11 @@
 .top__bar {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 1rem 5rem;
+}
+.top__bar .logo > h3 {
+	margin: 0;
 }
 
 .bottom__bar {
@@ -86,12 +92,14 @@
 	justify-content: space-between;
 	padding: 0.5rem 5rem;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .page__heading {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	flex: 2 0 35%;
 }
 .page__heading .icon {
 	padding: 0 1rem 0 0;
@@ -120,6 +128,97 @@
 	display: inline-flex;
 }
 .customBtn span.Icon {
-	margin: 0 .4rem 0 0;
+	margin: 0 0.4rem 0 0;
 }
 
+.setting__btn {
+	margin: 0 2rem;
+}
+
+.middle__items {
+	flex: 1 0 45%;
+}
+.back_link {
+	flex: 1 0 15%;
+	text-align: right;
+}
+.location__info {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.location__info__box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.location__inof__heading {
+	font-size: 14px;
+	color: #b8b8b8;
+}
+.location__inof__value {
+	font-weight: 800;
+	margin: 0.2rem 0;
+}
+.location__info__online {
+	color: #309260;
+	background-color: #dfedd7;
+	padding: 0.1rem 0.8rem;
+	border-radius: 5px;
+}
+.location__info__offline {
+	color: #ff2020;
+	background-color: #f4d0d0;
+	padding: 0.1rem 0.8rem;
+	border-radius: 5px;
+}
+
+.bottom__sub__bar {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	padding: 1rem 0;
+	border-top: 1px solid #f7f7f7;
+}
+
+.bottom__sub__bar .left__bar span {
+	display: inline-block;
+	margin-right: 5rem;
+	font-size: 12px;
+	font-weight: 700;
+}
+.bottom__sub__bar .right__bar {
+	font-size: 12px;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bottom__sub__bar .right__bar img {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+.online {
+	color: #309260;
+	background-color: #dfedd7;
+	padding: 0.1rem 0.8rem;
+	border-radius: 5px;
+	margin: 0 0.5rem;
+}
+.offline {
+	color: #ff2020;
+	background-color: #f4d0d0;
+	padding: 0.1rem 0.8rem;
+	border-radius: 5px;
+	margin: 0 0.5rem;
+}
+@media only screen and (max-width: 700px) {
+	.top__bar,
+	.bottom__bar {
+		padding: 0.5rem 2rem;
+	}
+	.back_link button {
+		line-height: 1;
+	}
+}

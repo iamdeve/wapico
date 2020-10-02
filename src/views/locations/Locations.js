@@ -67,7 +67,7 @@ function Locations() {
 								<span className={[classes.location__inof__value, classes.location__info__offline].join(' ')}>{loc.offline}</span>
 							</div>
 							<div className={classes.location__info__box}>
-								<span className={classes.location__inof__heading}>Allarms</span>
+								<span className={classes.location__inof__heading}>Alarms</span>
 								<span className={classes.location__inof__value}>{loc.allarms}</span>
 							</div>
 						</div>
